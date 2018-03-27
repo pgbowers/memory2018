@@ -1,0 +1,128 @@
+ /* CSS here...*/
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: border-box;
+ }
+
+ .game-square {
+     /*box-sizing: border-box;*/
+     /*border: 1px solid #000;*/
+     border-radius: 20px;
+     margin: 10px;
+     width: 150px;
+     height: 150px;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .game-square > div {
+     width: 100%;
+     height: 200%;
+     position: absolute;
+     top: 0;
+     transition: 400ms;
+     /* Add a transition */
+ }
+
+ .game-square > div > div {
+     height: 50%;
+ }
+
+ .game-square > div > div:first-child {
+     background-color: #af9d9d;
+ }
+
+ .flip > div {
+     top: -100%;
+ }
+
+ .square-0 {
+     background-image: url("assets/ball1.png");
+     background-color: white;
+ }
+
+ .square-1 {
+     background-image: url("assets/elf1.png");
+     background-color: lightsalmon;
+ }
+
+ .square-2 {
+     background-image: url("assets/candle1.png");
+     background-color: moccasin;
+ }
+
+ .square-3 {
+     background-image: url("assets/flower1.png");
+     background-color: mistyrose;
+ }
+
+ .square-4 {
+     background-image: url("assets/gift1.png");
+     background-color: tan;
+ }
+
+ .square-5 {
+     background-image: url("assets/bells1.png");
+     background-color: cadetblue;
+ }
+
+ .square-6 {
+     background-image: url("assets/pudding1.png");
+     background-color: lightgreen;
+ }
+
+ .square-7 {
+     background-image: url("assets/santa-penguin1.png");
+     background-color: chocolate;
+ }
+
+ .square-8 {
+     background-image: url("assets/scene1.png");
+     background-color: lightcoral;
+ }
+
+ .square-9 {
+     background-image: url("assets/tree1.png");
+     background-color: lightblue;
+ }
+
+ .square-10 {
+     background-image: url("assets/santa1.png");
+     background-color: burlywood;
+ }
+
+ .square-11 {
+     background-image: url("assets/sleigh1.png");
+     background-color: khaki;
+ }
+
+ .square-12 {
+     background-image: url("assets/snowman1.png");
+     background-color: lavender;
+ }
+
+ .square-13 {
+     background-image: url("assets/wreath1.png");
+     background-color: cornflowerblue;
+ }
+
+ #game {
+     /* gives a nice 4 x 4 colum display */
+     max-width: 700px;
+     /* centers the game on the screen */
+     margin: auto;
+     /* medium blue background */
+     background-color: #6589f9;
+     display: flex;
+     flex-wrap: wrap;
+     border: 5px solid #dadfe3;
+     justify-content: center;
+ }
+
+ #reset-button {
+     width: 100px;
+     display: flex;
+     margin: auto;
+ }
